@@ -1,3 +1,9 @@
+<?php
+error_reporting(7);
+require_once ('require.php');
+$tabela = sanitize_input($_GET['tab']);
+?>
+
 <html>
 <head>
 	
@@ -7,14 +13,15 @@
 </head>
 <body>
 
-<?php
 
-error_reporting(7);
-require_once ('require.php');
 
-echo prikazi_sve('model');
+<div id="nav">
+<?php echo nav_sqltabele(); ?>
+</div>
 
-?>
+<div id="content">
+<?php echo prikazi_sqltabelu($tabela); ?>
+</div>
 
 </body>
 </html>

@@ -3,9 +3,10 @@
 // veza sa bazom
 
 define ('hostname', 'localhost');
-define ('username', 'root');
-define ('password', 'root');
 define ('database', 'sae');
+define ('username', 'root');
+define ('password', '');
+
 
 // konekcija sa bazom
 
